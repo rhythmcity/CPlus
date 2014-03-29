@@ -11,6 +11,7 @@
 		BA42EFE818E562C90089D530 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA42EFE718E562C90089D530 /* main.mm */; };
 		BA42EFEC18E562C90089D530 /* cplus.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA42EFEB18E562C90089D530 /* cplus.1 */; };
 		BA42EFF418E568310089D530 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA42EFF218E568310089D530 /* Person.cpp */; };
+		BA5A585318E685FB009EF537 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA5A585118E685FB009EF537 /* Student.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		BA42EFEB18E562C90089D530 /* cplus.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = cplus.1; sourceTree = "<group>"; };
 		BA42EFF218E568310089D530 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
 		BA42EFF318E568310089D530 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BA5A585118E685FB009EF537 /* Student.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		BA5A585218E685FB009EF537 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				BA42EFE718E562C90089D530 /* main.mm */,
 				BA42EFF318E568310089D530 /* Person.h */,
 				BA42EFF218E568310089D530 /* Person.cpp */,
+				BA5A585218E685FB009EF537 /* Student.h */,
+				BA5A585118E685FB009EF537 /* Student.cpp */,
 				BA42EFEB18E562C90089D530 /* cplus.1 */,
 				BA42EFE918E562C90089D530 /* Supporting Files */,
 			);
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5A585318E685FB009EF537 /* Student.cpp in Sources */,
 				BA42EFF418E568310089D530 /* Person.cpp in Sources */,
 				BA42EFE818E562C90089D530 /* main.mm in Sources */,
 			);
@@ -259,6 +265,7 @@
 				BA42EFF118E562C90089D530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

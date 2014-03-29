@@ -9,6 +9,7 @@
 #include "Person.h"
 Person::Person()
 {
+    name=new char[255];
     strcpy(name,"liyan");
     age=30;
     sex='m';
@@ -17,9 +18,28 @@ Person::Person()
 
 Person::Person(int age)
 {
+    name=new char[255];
     strcpy(name,"liyan");
     this->age=age;
     sex='m';
+}
+
+Person::Person(const Person & per)
+{   this->name=new  char[255];
+    strcpy(this->name, per.name);
+   // this->name=per.name;
+    this->age=per.age;
+    this->sex=per.sex;
+}
+
+Person & Person::operator =(const Person & right)
+{
+   // this->name=new char [255];
+    strcpy(this->name, right.name);
+   // this->name=right.name;
+    this->age=right.age;
+    this->sex=right.sex;
+    return *this;
 }
 
 void Person::setAge(int age){
@@ -30,6 +50,12 @@ void Person::setAge(int age){
 int Person::getAge() const
 {
     return age;
+}
+
+void Person::setName(const char* name)
+{
+    strcpy(this->name, name);
+
 }
 
 const char * Person::getName()const
@@ -44,3 +70,23 @@ void Person::info()const{
 
 }
 
+Person::~Person()
+{
+  
+    delete []name;
+    printf("~Person\n");
+
+}
+//  student
+void Student::info() const 
+{
+    Person::info();
+printf("%f\n",score);
+
+}
+
+Student::Student()
+{
+    score=100.0f;
+
+}

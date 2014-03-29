@@ -35,9 +35,23 @@ int main(int argc, const char * argv[])
 //    printf("%d",per.getAge());
 //   const char *name=per.getName();
 //   cout<<per.getAge()<<endl ;
-    Person *per=new Person(60);
-    per->info();
-    delete per;
+//    
+//    Person per=Person();
+////    Person per1(per);
+//    Person per1=Person();
+//    per1=per;
+//    per1.info();
+    
+//    Person *per=new Person();
+//    per->setName("iPhone");
+//    per->info();
+//    delete per;
+    
+    Student stu= Student();
+//    stu.setName("android");
+//    stu.getAge();
+    stu.info();
+    printf("str,%lu",sizeof(stu));
     
     return 0;
 }

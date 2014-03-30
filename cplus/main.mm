@@ -21,6 +21,11 @@
 //    return a>b?a:b;
 //    
 //}
+
+//void sayhi(Person* per)
+//{
+//    per->info();
+//}
 int main(int argc, const char * argv[])
 {
 
@@ -51,7 +56,14 @@ int main(int argc, const char * argv[])
 //    stu.setName("android");
 //    stu.getAge();
     stu.info();
-    printf("str,%lu",sizeof(stu));
+    stu.move(3, 5);
+    Worker work=Worker();
+    work.info();
+    Person *per= Person::Create("iPhone");
+    per->info();
+   // Person::print();
+//    sayhi(&work);
+// printf("str,%lu",sizeof(stu));
     
     return 0;
 }

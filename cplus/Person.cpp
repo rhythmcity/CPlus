@@ -63,10 +63,25 @@ const char * Person::getName()const
     return name;
 
 }
+Person * Person::Create()
+{
+    Person *per =new Person();
+    return per;
 
+}
+Person * Person:: Create(const  char* name)
+{
+// Person *per =new Person();
+    Person *per=Person::Create();
+    strcpy(per->name, name);
+    return per;
+
+}
 void Person::info()const{
-
-    printf("%s\n%d\n%c\n",name,age,sex);
+    
+    printf("我是一个人\n");
+    printf("%s",this->name);
+   // printf("%s\n%d\n%c\n",name,age,sex);
 
 }
 
@@ -77,16 +92,37 @@ Person::~Person()
     printf("~Person\n");
 
 }
+// Action
+void Action:: move(int x, int y)
+{
+    this->x=x;
+    this->y=y;
+    
+
+}
+
+
 //  student
 void Student::info() const 
 {
-    Person::info();
-printf("%f\n",score);
+   // Person::info();
+    printf("我是一个学生\n");
+//printf("%f\n",score);
 
 }
 
 Student::Student()
 {
     score=100.0f;
+
+}
+Student:: ~Student()
+{
+
+    printf("~student");
+}
+//worker
+void Worker:: info() const{
+    printf("我是一个工人\n");
 
 }

@@ -22,14 +22,32 @@
 //    
 //}
 
-//void sayhi(Person* per)
-//{
-//    per->info();
-//}
+void sayhi(Person* per)
+{
+    per->info();
+}
+int maxnum(int x,int y)
+
+{
+    
+    int buf[2]={x,y};
+    
+    unsigned int z;
+    
+    
+    
+    z=x-y;
+    printf("%u\n",z);
+    z>>=31;
+   
+    printf("%d\n",z);
+    
+    return buf[z];
+    
+}
 int main(int argc, const char * argv[])
 {
-
-    
+    printf("%d",maxnum(4294967295,1));
 //    char *p =new char[10];
 //    strcpy(p,"iPhone");
 //    printf("%s\n",p);
@@ -51,14 +69,15 @@ int main(int argc, const char * argv[])
 //    per->setName("iPhone");
 //    per->info();
 //    delete per;
+
     
     Student stu= Student();
 //    stu.setName("android");
 //    stu.getAge();
     stu.info();
     stu.move(3, 5);
-    Worker work=Worker();
-    work.info();
+//    Worker work=Worker();
+//    work.info();
     Person *per= Person::Create("iPhone");
     per->info();
    // Person::print();
